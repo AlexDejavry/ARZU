@@ -2,15 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+
+    <input type="checkbox" id="nav-toggle" hidden>
+    <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <h2 class="logo"> 
+            <a class="logo_a">ARZU</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Главная</a>
+            <li><a href="#2">О нас</a>
+            <li><a href="#3">Товары</a>
+            <li><a href="#4">Блог</a>
+            <li><a href="#5">Контакты</a>
+        </ul>
+    </nav>
+
     <div class="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__suptitle"></h2>
                 <h1 class="intro__title"></h1>
+        </div>
+    </div>
+
+    <div class="slider middle">
+        <div class="slides">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2" >
+            <input type="radio" name="r" id="r3">
+            
+
+            <div class="slide s1"><img src="./assets/img/1.jpg" alt=""></div>
+            <div class="slide"><img src="./assets/img/2.jpg" alt=""></div>
+            <div class="slide"><img src="./assets/img/3.jpg" alt=""></div>
+            
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                
+            </div>
         </div>
     </div>
 </body>
